@@ -1,113 +1,198 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.2.0">
   <diagram name="第 1 页" id="VDeZXU7AlFh2T8AX7ofi">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
-          <mxGeometry width="150" height="862" as="geometry" />
+        <mxCell id="2" value="用户" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;rounded=0;" parent="1" vertex="1">
+          <mxGeometry width="150" height="1070" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="Browser" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
-          <mxGeometry x="211" width="150" height="862" as="geometry" />
+        <mxCell id="3" value="浏览器" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="264" width="150" height="1070" as="geometry" />
         </mxCell>
-        <mxCell id="4" value="WebServer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
-          <mxGeometry x="459" width="150" height="862" as="geometry" />
+        <mxCell id="4" value="服务器&#xa;（依赖方）" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="490" width="150" height="1070" as="geometry" />
         </mxCell>
-        <mxCell id="5" value="AuthServer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
-          <mxGeometry x="729" width="150" height="862" as="geometry" />
+        <mxCell id="6" value="认证器" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="740" width="150" height="1070" as="geometry" />
         </mxCell>
-        <mxCell id="6" value="FIDODevice" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
-          <mxGeometry x="929" width="150" height="862" as="geometry" />
-        </mxCell>
-        <mxCell id="7" value="Initiates login" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="3">
+        <mxCell id="7" value="提交注册信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="2" target="3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="189" y="109" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8" value="Sends login request" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="4">
+        <mxCell id="8" value="提交注册信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="3" target="4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="419" y="163" />
+              <mxPoint x="420" y="140" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="9" value="Request challenge for user" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="4" target="5">
+        <mxCell id="12" value="用户生物识别" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="6" target="2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="678" y="217" />
+              <mxPoint x="200" y="350" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="10" value="Returns challenge" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="5" target="4">
+        <mxCell id="13" value="识别成功" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="2" target="6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="681" y="271" />
+              <mxPoint x="550" y="390" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="11" value="Sends challenge to user" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="4" target="3">
+        <mxCell id="14" value="返回秘钥信息(credential)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="814.5" y="430" as="sourcePoint" />
+            <mxPoint x="338.5" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="保存用户秘钥信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="3" target="4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="422" y="325" />
+              <mxPoint x="430" y="470" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="12" value="Present challenge" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="2">
+        <mxCell id="18" value="保存成功" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" parent="1" source="4" target="3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="192" y="379" />
+              <mxPoint x="440" y="510" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="13" value="Provide biometric/credential" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="6">
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-22" value="注册成功" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="4" target="3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="548" y="433" />
+              <mxPoint x="440" y="190" />
             </Array>
+            <mxPoint x="554" y="190" as="sourcePoint" />
+            <mxPoint x="390" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="14" value="Sign challenge" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="6" target="3">
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-23" value="是否开启生物识别认证" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="657" y="487" />
+              <mxPoint x="211" y="230" />
             </Array>
+            <mxPoint x="290" y="220" as="sourcePoint" />
+            <mxPoint x="110" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="15" value="Sends signed challenge" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="4">
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-24" value="是" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="419" y="541" />
+              <mxPoint x="200" y="270" />
             </Array>
+            <mxPoint x="80" y="260" as="sourcePoint" />
+            <mxPoint x="310" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="16" value="Verify signed challenge" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="4" target="5">
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-25" value="navigator.credentials.create创建认证(携带用户信息)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="6">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="678" y="595" />
+              <mxPoint x="453" y="300" />
             </Array>
+            <mxPoint x="380" y="300" as="sourcePoint" />
+            <mxPoint x="578.5" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="17" value="Returns verification result" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="5" target="4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="681" y="649" />
-            </Array>
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-27" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="570" as="sourcePoint" />
+            <mxPoint x="870" y="570" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="18" value="Login success/failure" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="4" target="3">
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-32" value="生物识别登录" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="422" y="703" />
+              <mxPoint x="194" y="640" />
             </Array>
+            <mxPoint x="80" y="640" as="sourcePoint" />
+            <mxPoint x="340" y="640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="19" value="Display login result" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="2">
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-33" value="获取挑战(challenge)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="192" y="757" />
+              <mxPoint x="470" y="670" />
             </Array>
+            <mxPoint x="450" y="680" as="sourcePoint" />
+            <mxPoint x="714" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-34" value="返回挑战(challenge)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="700" />
+            </Array>
+            <mxPoint x="560" y="760" as="sourcePoint" />
+            <mxPoint x="390" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-35" value="生物识别认证(navigator.credentials.get)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="740" />
+            </Array>
+            <mxPoint x="410" y="660" as="sourcePoint" />
+            <mxPoint x="636" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-36" value="用户生物识别" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="6" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="770" />
+            </Array>
+            <mxPoint x="810" y="770" as="sourcePoint" />
+            <mxPoint x="70" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-37" value="识别成功" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="2" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="545" y="800" />
+            </Array>
+            <mxPoint x="70" y="800" as="sourcePoint" />
+            <mxPoint x="810" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-38" value="返回凭据(assertion)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="814.5" y="840" as="sourcePoint" />
+            <mxPoint x="338.5" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-39" value="验证凭证信息用户信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="471" y="890" />
+            </Array>
+            <mxPoint x="360" y="890" as="sourcePoint" />
+            <mxPoint x="560" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-40" value="验证成功(返回用户信息)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;endArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="401" y="1385" />
+            </Array>
+            <mxPoint x="564.5" y="930" as="sourcePoint" />
+            <mxPoint x="338.5" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="O_-eV2Va_jo3TLL0Aso5-42" value="登录成功" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="206" y="980" />
+            </Array>
+            <mxPoint x="334" y="980" as="sourcePoint" />
+            <mxPoint x="70" y="980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
